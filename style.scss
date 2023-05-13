@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navigation{
+    background:#1d3552;
+    padding: 10px 0;
+    .navbar-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            display: flex;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 55px;
+            text-transform: uppercase;
+            .one{
+                color: #828282;
+            }
+            .two{
+                color: #fff;
+            }
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 30px;
+            a{  
+                display: flex;
+                align-items: center;
+                color: #FFFFFF;
+                gap: 10px;
+            }
+            a:hover{
+                color: lightblue;
+                transition-duration: 0.3s;
+            }
+        }
+    }
+}
+
+main{
+    .home{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 180px 0;
+        .text-content{
+            width: 620px;
+            h4{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 40px;
+                color: #828282;
+                margin-bottom: 25px;
+            }
+            h1{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 78px;
+                line-height: 91px;
+                letter-spacing: 0.1em;
+                color: #1d3552;
+                margin-bottom: 39px;
+            }
+            h3{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 47px;
+                line-height: 57px;
+                color: #828282;
+            }
+        }
+        .about-content{
+            width: 550px;
+            h4{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 35px;
+                line-height: 57px;
+                color: #1d3552;
+                margin-bottom: 25px;
+            }
+            p{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                color: #828282;
+            }
+            .link{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+                a{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #fff;
+                    background-color: #1d3552;
+                    padding: 5px 10px;
+                    border-top-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+                a:hover{
+                    background:#5f82ad;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+    }
+
+}
+
+.projects{
+    padding-bottom: 100px;
+    h1{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 57px;
+        color: #1d3552;
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        img{
+            width: 550px;
+            height: 350px;
+            border-top-right-radius: 12px;
+        }
+        .card{
+            border: 5px solid #5f82ad;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            p{
+                padding: 10px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 41px;
+                color: #5f82ad;
+            }
+        }
+        .card:hover{
+            border: 5px solid #1d3552;
+            transition: 0.5s;
+            p{
+                color: #1d3552;
+            }
+        }
+    }
+}
+
+.skills{
+    padding: 130px 0;
+    h1{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 57px;
+        color: #1d3552;
+        margin-bottom: 80px; 
+    }
+    .boxes{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .box-1{
+            width: 128px;
+            height: 256px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .box-2{
+            width: 128px;
+            height: 256px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .box-3{
+            width: 128px;
+            height: 256px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            img{
+                width: 128px;
+                height: 128px;
+            }
+        }
+        .box-4{
+            width: 128px;
+            height: 256px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            img{
+                width: 128px;
+                height: 128px;
+            }
+        }
+        .box-5{
+            width: 128px;
+            height: 256px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .box-6{
+            width: 128px;
+            height: 256px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+}
